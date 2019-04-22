@@ -2,6 +2,6 @@
 
 CMSC 167 Project Repository
 
-Alvarez 
-Famat
-Sotto
+Alvarez, Mary Michaelle <br/>
+Famat, Ruffa Mae <br/>
+Sotto, Wina Gen <br/>
