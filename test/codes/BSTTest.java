@@ -1,5 +1,6 @@
-package codes;
+package test.codes;
 
+import codes.BST;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

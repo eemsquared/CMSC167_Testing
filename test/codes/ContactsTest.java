@@ -1,5 +1,6 @@
-package codes;
+package test.codes;
 
+import codes.Contacts;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
