@@ -180,7 +180,7 @@
   </path>
   
   
-  <target name="compile.module.cmsc167_testing" depends="compile.module.cmsc167_testing.production,compile.module.cmsc167_testing.tests" description="Compile module CMSC167_Testing"/>
+  <target name="compile.module.cmsc167_testing" depends="compile.module.cmsc167_testing.production,test" description="Compile module CMSC167_Testing"/>
   
   <target name="compile.module.cmsc167_testing.production" depends="register.custom.compilers" description="Compile module CMSC167_Testing; production classes">
     <mkdir dir="${cmsc167_testing.output.dir}"/>
@@ -200,7 +200,7 @@
     </copy>
   </target>
   
-  <target name="compile.module.cmsc167_testing.tests" depends="register.custom.compilers,compile.module.cmsc167_testing.production" description="compile module CMSC167_Testing; test classes" unless="skip.tests"/>
+  <target name="test" depends="register.custom.compilers,compile.module.cmsc167_testing.production" description="compile module CMSC167_Testing; test classes" unless="skip.tests"/>
   
   <target name="clean.module.cmsc167_testing" description="cleanup module">
     <delete dir="${cmsc167_testing.output.dir}"/>
