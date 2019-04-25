@@ -106,13 +106,13 @@
   
   <import file="${basedir}/module_cmsc167_testing.xml"/>
   
-  <target name="init" description="Build initialization">
+  <target name="build" description="Build initialization">
     <!-- Perform any build initialization in this target -->
   </target>
   
   <target name="clean" depends="clean.module.cmsc167_testing" description="cleanup all"/>
   
-  <target name="build.modules" depends="init, clean, compile.module.cmsc167_testing" description="build all modules"/>
+  <target name="build.modules" depends="build, clean, compile.module.cmsc167_testing" description="build all modules"/>
   
   <target name="all" depends="build.modules" description="build all"/>
 </project>
