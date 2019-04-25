@@ -115,4 +115,6 @@
   <target name="build.modules" depends="build, clean, compile.module.cmsc167_testing" description="build all modules"/>
   
   <target name="all" depends="build.modules" description="build all"/>
+
+  <target name="test" depends="compile.module.cmsc167_testing.tests" description="make test" />
 </project>
