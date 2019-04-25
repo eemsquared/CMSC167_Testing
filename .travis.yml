@@ -3,7 +3,9 @@ jdk:
   - oraclejdk8
 script:
   - ant build
-  - make test
+  - ant test
+before_install:
+  cd java
 notifications:
   email:
     recipients:
