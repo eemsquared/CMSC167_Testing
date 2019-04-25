@@ -4,3 +4,10 @@ jdk:
 script:
   - ant build
   - make test
+notifications:
+  email:
+    recipients:
+      - abcdefghijklm400@gmail.com
+      - ruffamaefamat@gmail.com
+    on_success: always
+    on_failure: always
