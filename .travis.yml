@@ -4,8 +4,6 @@ jdk:
 script:
   - ant build
   - ant test
-before_install:
-  cd java
 notifications:
   email:
     recipients:
