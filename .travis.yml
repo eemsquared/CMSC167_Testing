@@ -3,7 +3,7 @@ jdk:
   - oraclejdk8
 script:
   - ant build
-  - ant compile.module.cmsc167_testing.tests
+  - ant run
 notifications:
   email:
     recipients:
