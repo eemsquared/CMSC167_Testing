@@ -3,7 +3,7 @@ jdk:
   - oraclejdk8
 script:
   - ant build
-  - ant run
+  - ant test
 notifications:
   email:
     recipients:
