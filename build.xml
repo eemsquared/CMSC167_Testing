@@ -98,6 +98,8 @@
     <pathelement location="${javac2.home}/asm-all.jar"/>
     <pathelement location="${javac2.home}/asm-commons.jar"/>
     <pathelement location="${javac2.home}/jgoodies-forms.jar"/>
+    <pathelement location="${javac2.home}/forms_rt.jar"/>
+    <pathelement location="${javac2.home}/redist/annotations.jar"/>
   </path>
   <target name="register.custom.compilers">
     <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
