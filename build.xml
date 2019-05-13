@@ -100,7 +100,7 @@
     <pathelement location="${javac2.home}/jgoodies-forms.jar"/>
   </path>
   <target name="register.custom.compilers">
-    <taskdef name="javac2.home" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
     <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
   </target>
   
@@ -202,7 +202,9 @@
     </copy>
   </target>
   
-  <target name="test" depends="register.custom.compilers,compile.module.cmsc167_testing.production" description="compile module CMSC167_Testing; test classes" unless="skip.tests"/>
+  <target name="test" depends="register.custom.compilers,compile.module.cmsc167_testing.production" description="compile module CMSC167_Testing; test classes" unless="skip.tests">
+
+  </target>
   
   <target name="clean.module.cmsc167_testing" description="cleanup module">
     <delete dir="${cmsc167_testing.output.dir}"/>
